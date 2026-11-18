@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MKY 엔터테인먼트</title>
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#111111;text-decoration:none}a:hover{color:#555555}
+.nav-links a{font-family:Inter,'Noto Sans KR',sans-serif;font-size:14px;font-weight:600;letter-spacing:0.12em}
+.member-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.two-col{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:64px}
+.field-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:#e5e5e5;border:1px solid #e5e5e5}
+@media (max-width: 900px){
+.member-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.two-col{grid-template-columns:minmax(0,1fr);gap:32px}
+.field-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.hero-title{font-size:64px !important}
+}
+
+.news-tab{min-height:44px;padding:0 20px;border:1px solid #d4d4d4;background:#ffffff;color:#333333;font-family:Inter,sans-serif;font-size:13px;font-weight:700;letter-spacing:.12em;cursor:pointer}
+.news-tab[aria-selected="true"]{border-color:#111111;background:#111111;color:#ffffff}
+.news-item[hidden]{display:none !important}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+<div style="font-family: 'Noto Sans KR', Inter, sans-serif; color: #111111; background: #ffffff; width: 100%">
+
+  <!-- HEADER -->
+  <header style="position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.96); border-bottom: 1px solid #ececec">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+      <a href="#top" aria-label="MKY 엔터테인먼트 홈" style="display: flex; align-items: center"><img src="images/logo.png" alt="MKY Entertainment" style="height: 48px; width: auto; display: block"></a>
+      <nav class="nav-links" aria-label="주 메뉴" style="display: flex; gap: 40px; flex-wrap: wrap">
+        <a href="#about">ABOUT</a>
+        <a href="#artists">ARTISTS</a>
+        <a href="#news">NEWS</a>
+        <a href="#audition">AUDITION</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" style="background: #1C1630; color: #ffffff">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 140px 40px 120px; display: flex; flex-direction: column; gap: 40px">
+      <p style="margin: 0; font-family: Inter, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.3em; color: #C9BCF2">DEBUT SINGLE ‘INVINCIBLE HEART’ · TITLE ‘두근두근 무적모드’</p>
+      <h1 class="hero-title" style="margin: 0; font-family: Inter, sans-serif; font-size: 128px; font-weight: 800; line-height: 0.92; letter-spacing: -0.04em">DOKIDOKI</h1>
+      <p style="margin: 0; font-size: 22px; font-weight: 300; color: #d6d6da">데뷔하자마자 모두를 두근거리게 만든 무적의 아이돌.</p>
+      <div style="display: flex; gap: 10px; align-items: center">
+        <span aria-hidden="true" style="width: 48px; height: 6px; background: #2f4fc4"></span>
+        <span aria-hidden="true" style="width: 48px; height: 6px; background: #9a7de6"></span>
+        <span aria-hidden="true" style="width: 48px; height: 6px; background: #d8203f"></span>
+        <span aria-hidden="true" style="width: 48px; height: 6px; background: #f08cb4"></span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: #3A3152; border: 1px solid #3A3152; margin-top: 8px">
+        <div style="background: #1C1630; padding: 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Inter, sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.02em">#1</span><span style="font-size: 14px; color: #C9BCF2">데뷔 2일 만에 음원 차트 실시간 1위</span></div>
+        <div style="background: #1C1630; padding: 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Inter, sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.02em">32M</span><span style="font-size: 14px; color: #C9BCF2">타이틀곡 MV 조회수 (3일)</span></div>
+        <div style="background: #1C1630; padding: 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Inter, sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.02em">41만 장</span><span style="font-size: 14px; color: #C9BCF2">데뷔 싱글 초동 판매량</span></div>
+        <div style="background: #1C1630; padding: 24px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Inter, sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.02em">SOLD OUT</span><span style="font-size: 14px; color: #C9BCF2">데뷔 쇼케이스 · 예스24라이브홀</span></div>
+      </div>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px">
+        <a href="#artists" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; background: #ffffff; color: #111111; font-family: Inter, sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.12em">VIEW ARTIST</a>
+        <a href="#news" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; border: 1px solid #5a5a60; color: #ffffff; font-family: Inter, sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.12em">LATEST NEWS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" style="border-bottom: 1px solid #ececec">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 120px 40px">
+      <div class="two-col">
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <p style="margin: 0; font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.3em; color: #6B5BA8">01</p>
+          <h2 style="margin: 0; font-family: Inter, sans-serif; font-size: 48px; font-weight: 800; letter-spacing: -0.02em">ABOUT</h2>
+          <p style="margin: 0; font-size: 15px; color: #555555">회사 소개</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 48px">
+          <div style="display: flex; flex-direction: column; gap: 20px">
+            <h3 style="margin: 0; font-size: 30px; font-weight: 700; line-height: 1.45; letter-spacing: -0.02em">작게 시작해 크게 두근거린 회사,<br>MKY 엔터테인먼트입니다.</h3>
+            <p style="margin: 0; font-size: 16px; line-height: 1.9; color: #444444">MKY 엔터테인먼트는 단 하나의 그룹, DOKIDOKI와 함께 출발한 신생 기획사입니다. 작은 회사였기에 멤버 한 사람 한 사람의 색을 끝까지 지킬 수 있었고, 그 네 가지 색이 모인 무대가 데뷔와 동시에 많은 사람의 마음을 움직였습니다. 처음 마주한 순간의 두근거림이 오래 이어지도록 — MKY는 지금도 DOKIDOKI와 함께 다음 무대를 준비합니다.</p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 16px; padding: 32px; background: #F4F1FC">
+            <p style="margin: 0; font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.24em; color: #666666">CEO MESSAGE</p>
+            <p style="margin: 0; font-size: 16px; line-height: 1.9; color: #333333">[대표 인사말을 입력하세요]</p>
+            <p style="margin: 0; font-size: 15px; font-weight: 700">대표 항야</p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 20px">
+            <p style="margin: 0; font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.24em; color: #666666">ORGANIZATION</p>
+            <div style="display: flex; align-items: center; gap: 16px; padding: 20px 24px; background: #3B2E6B; color: #ffffff">
+              <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; color: #C9BCF2">CEO</span>
+              <span style="font-size: 15px; color: #E4DEF7">대표</span>
+              <span style="font-size: 20px; font-weight: 700">항야</span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px">
+              
+                <div style="display: flex; flex-direction: column; gap: 14px; padding: 22px; border: 1px solid #E2DCF3">
+                  <div style="display: flex; flex-direction: column; gap: 2px">
+                    <span style="font-size: 16px; font-weight: 700">매니지먼트팀</span>
+                    <span style="font-family: Inter, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.16em; color: #6B5BA8">MANAGEMENT</span>
+                  </div>
+                  
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 10px; border-top: 1px solid #F0ECF9">
+                      <span style="font-size: 13px; color: #555555">스케줄 매니저</span>
+                      <span style="font-size: 15px; font-weight: 700">삐약</span>
+                    </div>
+                  
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 10px; border-top: 1px solid #F0ECF9">
+                      <span style="font-size: 13px; color: #555555">로드 매니저</span>
+                      <span style="font-size: 15px; font-weight: 700">지누</span>
+                    </div>
+                  
+                </div>
+              
+                <div style="display: flex; flex-direction: column; gap: 14px; padding: 22px; border: 1px solid #E2DCF3">
+                  <div style="display: flex; flex-direction: column; gap: 2px">
+                    <span style="font-size: 16px; font-weight: 700">뷰티팀</span>
+                    <span style="font-family: Inter, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.16em; color: #6B5BA8">BEAUTY</span>
+                  </div>
+                  
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 10px; border-top: 1px solid #F0ECF9">
+                      <span style="font-size: 13px; color: #555555">메이크업 아티스트</span>
+                      <span style="font-size: 15px; font-weight: 700">빠미</span>
+                    </div>
+                  
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 10px; border-top: 1px solid #F0ECF9">
+                      <span style="font-size: 13px; color: #555555">헤어 스타일리스트</span>
+                      <span style="font-size: 15px; font-weight: 700">니루</span>
+                    </div>
+                  
+                </div>
+              
+                <div style="display: flex; flex-direction: column; gap: 14px; padding: 22px; border: 1px solid #E2DCF3">
+                  <div style="display: flex; flex-direction: column; gap: 2px">
+                    <span style="font-size: 16px; font-weight: 700">스타일링팀</span>
+                    <span style="font-family: Inter, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.16em; color: #6B5BA8">STYLING</span>
+                  </div>
+                  
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 10px; border-top: 1px solid #F0ECF9">
+                      <span style="font-size: 13px; color: #555555">스타일리스트</span>
+                      <span style="font-size: 15px; font-weight: 700">루</span>
+                    </div>
+                  
+                </div>
+              
+                <div style="display: flex; flex-direction: column; gap: 14px; padding: 22px; border: 1px solid #E2DCF3">
+                  <div style="display: flex; flex-direction: column; gap: 2px">
+                    <span style="font-size: 16px; font-weight: 700">경호팀</span>
+                    <span style="font-family: Inter, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.16em; color: #6B5BA8">SECURITY</span>
+                  </div>
+                  
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 10px; border-top: 1px solid #F0ECF9">
+                      <span style="font-size: 13px; color: #555555">경호팀장</span>
+                      <span style="font-size: 15px; font-weight: 700">코르티솔</span>
+                    </div>
+                  
+                </div>
+              
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px; background: #F4F1FC; flex-wrap: wrap">
+              <div style="display: flex; align-items: center; gap: 16px">
+                <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; color: #6B5BA8">FAN CLUB</span>
+                <span style="font-size: 15px; color: #444444">공식 팬클럽 코코로 회장</span>
+              </div>
+              <span style="font-size: 20px; font-weight: 800">코이 <span style="font-family: Inter, sans-serif">KOI</span></span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0">
+            <p style="margin: 0 0 16px; font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.24em; color: #666666">HISTORY</p>
+            <div style="display: flex; gap: 32px; padding: 20px 0; border-top: 1px solid #3B2E6B">
+              <span style="font-family: Inter, sans-serif; font-weight: 700; font-size: 16px; min-width: 104px">2026.11.19</span>
+              <span style="font-size: 16px; color: #333333">엠카운트다운에서 첫 음악방송 데뷔 무대</span>
+            </div>
+            <div style="display: flex; gap: 32px; padding: 20px 0; border-top: 1px solid #e5e5e5">
+              <span style="font-family: Inter, sans-serif; font-weight: 700; font-size: 16px; min-width: 104px">2026.11.18</span>
+              <span style="font-size: 16px; color: #333333">타이틀곡 ‘두근두근 무적모드’ 국내 음원 차트 실시간 1위 · MV 3천만 뷰 돌파</span>
+            </div>
+            <div style="display: flex; gap: 32px; padding: 20px 0; border-top: 1px solid #e5e5e5">
+              <span style="font-family: Inter, sans-serif; font-weight: 700; font-size: 16px; min-width: 104px">2026.11.16</span>
+              <span style="font-size: 16px; color: #333333">첫 아티스트 DOKIDOKI 데뷔 — 데뷔 싱글 ‘INVINCIBLE HEART’ 발매, 예스24라이브홀 쇼케이스 매진, 초동 41만 장</span>
+            </div>
+            <div style="display: flex; gap: 32px; padding: 20px 0; border-top: 1px solid #e5e5e5">
+              <span style="font-family: Inter, sans-serif; font-weight: 700; font-size: 16px; min-width: 104px">2026.06</span>
+              <span style="font-size: 16px; color: #333333">DOKIDOKI 멤버 4인 확정</span>
+            </div>
+            <div style="display: flex; gap: 32px; padding: 20px 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5">
+              <span style="font-family: Inter, sans-serif; font-weight: 700; font-size: 16px; min-width: 104px">2025.03</span>
+              <span style="font-size: 16px; color: #333333">MKY 엔터테인먼트 설립</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTISTS -->
+  <section id="artists" style="border-bottom: 1px solid #ececec">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 120px 40px; display: flex; flex-direction: column; gap: 56px">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <p style="margin: 0; font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.3em; color: #6B5BA8">02</p>
+          <h2 style="margin: 0; font-family: Inter, sans-serif; font-size: 48px; font-weight: 800; letter-spacing: -0.02em">ARTISTS</h2>
+        </div>
+        <p style="margin: 0; font-size: 15px; color: #555555">MKY의 처음이자 유일한 아티스트</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 32px">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; padding-bottom: 24px; border-bottom: 2px solid #111111">
+          <div style="display: flex; align-items: baseline; gap: 20px; flex-wrap: wrap">
+            <h3 style="margin: 0; font-family: Inter, sans-serif; font-size: 40px; font-weight: 800; letter-spacing: -0.02em">DOKIDOKI</h3>
+            <span style="font-size: 16px; color: #555555">도키도키 · 무적의 아이돌</span>
+          </div>
+          <span style="font-family: Inter, sans-serif; font-size: 14px; color: #555555; letter-spacing: 0.08em">4 MEMBERS · DEBUT 2026.11.16 · FANDOM 코코로</span>
+        </div>
+
+        <div class="member-grid">
+          
+            <article style="display: flex; flex-direction: column; gap: 16px">
+              <div style="position: relative; aspect-ratio: 3 / 4; background: #f2f2f4; overflow: hidden">
+                <img src="images/tyobi.jpg" alt="툐비 프로필" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block">
+                <span aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: #2f4fc4"></span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #2f4fc4"></span>
+                  <h4 style="margin: 0; font-family: Inter, sans-serif; font-size: 22px; font-weight: 800; letter-spacing: 0.02em">TYOBI</h4>
+                  <span style="font-size: 16px; color: #444444">툐비</span>
+                </div>
+                <p style="margin: 0; font-size: 14px; color: #555555">메인보컬 · 막내즈</p>
+                <p style="margin: 4px 0 0; font-size: 14px; line-height: 1.6; color: #333333; word-break: keep-all">노래할 땐 꼬리까지 같이 흔들리는 메인보컬.</p>
+              </div>
+            </article>
+          
+            <article style="display: flex; flex-direction: column; gap: 16px">
+              <div style="position: relative; aspect-ratio: 3 / 4; background: #f2f2f4; overflow: hidden">
+                <img src="images/ahi.jpg" alt="아히 프로필" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block">
+                <span aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: #9a7de6"></span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #9a7de6"></span>
+                  <h4 style="margin: 0; font-family: Inter, sans-serif; font-size: 22px; font-weight: 800; letter-spacing: 0.02em">AHI</h4>
+                  <span style="font-size: 16px; color: #444444">아히</span>
+                </div>
+                <p style="margin: 0; font-size: 14px; color: #555555">리더 · 메인댄서 · 막내즈</p>
+                <p style="margin: 4px 0 0; font-size: 14px; line-height: 1.6; color: #333333; word-break: keep-all">막내 라인이지만 팀을 이끄는 리더이자 메인댄서.</p>
+              </div>
+            </article>
+          
+            <article style="display: flex; flex-direction: column; gap: 16px">
+              <div style="position: relative; aspect-ratio: 3 / 4; background: #f2f2f4; overflow: hidden">
+                <img src="images/dojung.jpg" alt="도중 프로필" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block">
+                <span aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: #d8203f"></span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #d8203f"></span>
+                  <h4 style="margin: 0; font-family: Inter, sans-serif; font-size: 22px; font-weight: 800; letter-spacing: 0.02em">DOJUNG</h4>
+                  <span style="font-size: 16px; color: #444444">도중</span>
+                </div>
+                <p style="margin: 0; font-size: 14px; color: #555555">맏언니 · 리드보컬 · 비주얼 · 맏내즈</p>
+                <p style="margin: 4px 0 0; font-size: 14px; line-height: 1.6; color: #333333; word-break: keep-all">장난기 가득한 웃음의 맏언니, 리드보컬이자 비주얼.</p>
+              </div>
+            </article>
+          
+            <article style="display: flex; flex-direction: column; gap: 16px">
+              <div style="position: relative; aspect-ratio: 3 / 4; background: #f2f2f4; overflow: hidden">
+                <img src="images/mayo.jpg" alt="마요 프로필" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block">
+                <span aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: #f08cb4"></span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px">
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #f08cb4"></span>
+                  <h4 style="margin: 0; font-family: Inter, sans-serif; font-size: 22px; font-weight: 800; letter-spacing: 0.02em">MAYO</h4>
+                  <span style="font-size: 16px; color: #444444">마요</span>
+                </div>
+                <p style="margin: 0; font-size: 14px; color: #555555">메인래퍼 · 맏내즈</p>
+                <p style="margin: 4px 0 0; font-size: 14px; line-height: 1.6; color: #333333; word-break: keep-all">차가운 눈빛 뒤에 숨은 반전 매력의 메인래퍼.</p>
+              </div>
+            </article>
+          
+        </div>
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <div style="display: flex; gap: 12px; align-items: center; padding: 14px 20px; border: 1px solid #e0e0e0">
+            <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; color: #666666">UNIT</span>
+            <span style="font-size: 15px; font-weight: 700">막내즈</span>
+            <span style="font-size: 14px; color: #555555">툐비 · 아히</span>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: center; padding: 14px 20px; border: 1px solid #e0e0e0">
+            <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; color: #666666">UNIT</span>
+            <span style="font-size: 15px; font-weight: 700">맏내즈</span>
+            <span style="font-size: 14px; color: #555555">도중 · 마요</span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; padding: 32px; background: #F4F1FC; align-items: start">
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.24em; color: #6B5BA8">DEBUT SINGLE · 2026.11.16</span>
+            <h4 style="margin: 0; font-family: Inter, sans-serif; font-size: 32px; font-weight: 800; letter-spacing: -0.01em">INVINCIBLE HEART</h4>
+            <a href="https://sinahee.github.io/DOKIDOKI/" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 12px; padding: 0 22px; background: #3B2E6B; color: #ffffff; font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.12em">DOKIDOKI OFFICIAL SITE ↗</a>
+          </div>
+          <ol style="margin: 0; padding: 0; list-style: none; border-top: 1px solid #3B2E6B">
+            <li style="display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #E2DCF3; font-size: 16px"><span style="font-family: Inter, sans-serif; font-size: 13px; color: #666666">01</span><span style="font-weight: 700">두근두근 무적모드</span><span style="font-family: Inter, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: #ffffff; background: #d8203f; padding: 2px 8px">TITLE</span></li>
+            <li style="display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #E2DCF3; font-size: 16px"><span style="font-family: Inter, sans-serif; font-size: 13px; color: #666666">02</span><span>INVINCIBLE HEART</span></li>
+            <li style="display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #E2DCF3; font-size: 16px"><span style="font-family: Inter, sans-serif; font-size: 13px; color: #666666">03</span><span>KOKORO (코코로에게)</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news" style="border-bottom: 1px solid #ececec; background: #fafafa">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 120px 40px">
+      <div class="two-col">
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <p style="margin: 0; font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.3em; color: #6B5BA8">03</p>
+          <h2 style="margin: 0; font-family: Inter, sans-serif; font-size: 48px; font-weight: 800; letter-spacing: -0.02em">NEWS</h2>
+          <p style="margin: 0; font-size: 15px; color: #555555">공지 · 뉴스</p>
+        </div>
+        <div style="display: flex; flex-direction: column">
+          <div role="tablist" aria-label="뉴스 분류" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px">
+            <button type="button" role="tab" class="news-tab" data-cat="ALL" aria-selected="true">ALL</button>
+<button type="button" role="tab" class="news-tab" data-cat="NOTICE" aria-selected="false">NOTICE</button>
+<button type="button" role="tab" class="news-tab" data-cat="NEWS" aria-selected="false">NEWS</button>
+<button type="button" role="tab" class="news-tab" data-cat="AUDITION" aria-selected="false">AUDITION</button>
+
+          </div>
+          <div style="border-top: 1px solid #111111">
+            
+              <a href="#news" class="news-item" data-cat="NEWS" style="display: flex; gap: 24px; align-items: center; padding: 26px 4px; border-bottom: 1px solid #e2e2e2; flex-wrap: wrap">
+                <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #555555; min-width: 64px">NEWS</span>
+                <span style="flex: 1 1 320px; font-size: 17px; font-weight: 500; color: #111111">DOKIDOKI, 오늘 엠카운트다운서 첫 음악방송 데뷔 무대</span>
+                <span style="font-family: Inter, sans-serif; font-size: 14px; color: #666666">2026.11.19</span>
+              </a>
+            
+              <a href="#news" class="news-item" data-cat="AUDITION" style="display: flex; gap: 24px; align-items: center; padding: 26px 4px; border-bottom: 1px solid #e2e2e2; flex-wrap: wrap">
+                <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #555555; min-width: 64px">AUDITION</span>
+                <span style="flex: 1 1 320px; font-size: 17px; font-weight: 500; color: #111111">MKY 엔터테인먼트 2027 상반기 공개 오디션 — DOKIDOKI의 후배를 찾습니다</span>
+                <span style="font-family: Inter, sans-serif; font-size: 14px; color: #666666">2026.11.19</span>
+              </a>
+            
+              <a href="#news" class="news-item" data-cat="NEWS" style="display: flex; gap: 24px; align-items: center; padding: 26px 4px; border-bottom: 1px solid #e2e2e2; flex-wrap: wrap">
+                <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #555555; min-width: 64px">NEWS</span>
+                <span style="flex: 1 1 320px; font-size: 17px; font-weight: 500; color: #111111">‘두근두근 무적모드’ 데뷔 이틀 만에 음원 차트 실시간 1위 · MV 3천만 뷰 돌파</span>
+                <span style="font-family: Inter, sans-serif; font-size: 14px; color: #666666">2026.11.18</span>
+              </a>
+            
+              <a href="#news" class="news-item" data-cat="NOTICE" style="display: flex; gap: 24px; align-items: center; padding: 26px 4px; border-bottom: 1px solid #e2e2e2; flex-wrap: wrap">
+                <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #555555; min-width: 64px">NOTICE</span>
+                <span style="flex: 1 1 320px; font-size: 17px; font-weight: 500; color: #111111">DOKIDOKI 공식 팬덤명 ‘코코로’ 안내 · 코코로 1기 모집(11.22 오픈) 예고</span>
+                <span style="font-family: Inter, sans-serif; font-size: 14px; color: #666666">2026.11.18</span>
+              </a>
+            
+              <a href="#news" class="news-item" data-cat="NOTICE" style="display: flex; gap: 24px; align-items: center; padding: 26px 4px; border-bottom: 1px solid #e2e2e2; flex-wrap: wrap">
+                <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #555555; min-width: 64px">NOTICE</span>
+                <span style="flex: 1 1 320px; font-size: 17px; font-weight: 500; color: #111111">DOKIDOKI 첫 팬사인회 개최 안내 (11.29 · 장소 추후 공지)</span>
+                <span style="font-family: Inter, sans-serif; font-size: 14px; color: #666666">2026.11.17</span>
+              </a>
+            
+              <a href="#news" class="news-item" data-cat="NEWS" style="display: flex; gap: 24px; align-items: center; padding: 26px 4px; border-bottom: 1px solid #e2e2e2; flex-wrap: wrap">
+                <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #555555; min-width: 64px">NEWS</span>
+                <span style="flex: 1 1 320px; font-size: 17px; font-weight: 500; color: #111111">신생 기획사의 반란… DOKIDOKI 데뷔 싱글 초동 41만 장</span>
+                <span style="font-family: Inter, sans-serif; font-size: 14px; color: #666666">2026.11.17</span>
+              </a>
+            
+              <a href="#news" class="news-item" data-cat="NEWS" style="display: flex; gap: 24px; align-items: center; padding: 26px 4px; border-bottom: 1px solid #e2e2e2; flex-wrap: wrap">
+                <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #555555; min-width: 64px">NEWS</span>
+                <span style="flex: 1 1 320px; font-size: 17px; font-weight: 500; color: #111111">‘무적의 아이돌’ DOKIDOKI, 데뷔 싱글 ‘INVINCIBLE HEART’로 데뷔 · 예스24라이브홀 쇼케이스 매진</span>
+                <span style="font-family: Inter, sans-serif; font-size: 14px; color: #666666">2026.11.16</span>
+              </a>
+            
+              <a href="#news" class="news-item" data-cat="NEWS" style="display: flex; gap: 24px; align-items: center; padding: 26px 4px; border-bottom: 1px solid #e2e2e2; flex-wrap: wrap">
+                <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #555555; min-width: 64px">NEWS</span>
+                <span style="flex: 1 1 320px; font-size: 17px; font-weight: 500; color: #111111">DOKIDOKI 유닛 ‘막내즈’(툐비·아히) · ‘맏내즈’(도중·마요) 공개</span>
+                <span style="font-family: Inter, sans-serif; font-size: 14px; color: #666666">2026.11.16</span>
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDITION -->
+  <section id="audition" style="border-bottom: 1px solid #ececec">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 120px 40px; display: flex; flex-direction: column; gap: 56px">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <p style="margin: 0; font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.3em; color: #6B5BA8">04</p>
+          <h2 style="margin: 0; font-family: Inter, sans-serif; font-size: 48px; font-weight: 800; letter-spacing: -0.02em">AUDITION</h2>
+        </div>
+        <p style="margin: 0; font-size: 15px; color: #555555">오디션 안내</p>
+      </div>
+
+      <h3 style="margin: 0; font-size: 34px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em">다음 두근거림의 주인공을 찾습니다.</h3>
+
+      <div class="field-grid">
+        <div style="background: #ffffff; padding: 32px 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.2em; color: #666666">VOCAL</span><span style="font-size: 18px; font-weight: 700">보컬</span></div>
+        <div style="background: #ffffff; padding: 32px 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.2em; color: #666666">DANCE</span><span style="font-size: 18px; font-weight: 700">댄스</span></div>
+        <div style="background: #ffffff; padding: 32px 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.2em; color: #666666">RAP</span><span style="font-size: 18px; font-weight: 700">랩</span></div>
+        <div style="background: #ffffff; padding: 32px 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.2em; color: #666666">ACTING</span><span style="font-size: 18px; font-weight: 700">연기</span></div>
+        <div style="background: #ffffff; padding: 32px 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.2em; color: #666666">MODEL</span><span style="font-size: 18px; font-weight: 700">모델</span></div>
+      </div>
+
+      <div class="two-col" style="gap: 48px">
+        <div style="display: flex; flex-direction: column; gap: 20px">
+          <p style="margin: 0; font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.24em; color: #666666">PROCESS</p>
+          <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px">
+            <li style="display: flex; gap: 16px; font-size: 16px"><span style="font-family: Inter, sans-serif; font-weight: 800">01</span>서류 접수</li>
+            <li style="display: flex; gap: 16px; font-size: 16px"><span style="font-family: Inter, sans-serif; font-weight: 800">02</span>1차 영상 심사</li>
+            <li style="display: flex; gap: 16px; font-size: 16px"><span style="font-family: Inter, sans-serif; font-weight: 800">03</span>2차 대면 오디션</li>
+            <li style="display: flex; gap: 16px; font-size: 16px"><span style="font-family: Inter, sans-serif; font-weight: 800">04</span>최종 합격 · 연습생 계약</li>
+          </ol>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 24px; padding: 40px; background: #1C1630; color: #ffffff">
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <span style="font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.24em; color: #C9BCF2">ELIGIBILITY</span>
+            <span style="font-size: 16px; line-height: 1.7; color: #e6e6ea">2008~2014년생 여성 · 국적 무관 · 소속사 없는 분</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <span style="font-family: Inter, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.24em; color: #C9BCF2">HOW TO APPLY</span>
+            <span style="font-size: 16px; line-height: 1.7; color: #e6e6ea">프로필 사진, 자기소개, 장기 영상을 첨부해 audition@mky-ent.com로 보내주세요.</span>
+          </div>
+          <a href="#audition" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; background: #ffffff; color: #111111; font-family: Inter, sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.12em">APPLY NOW</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: #F4F1FC; color: #4A4458; border-top: 1px solid #E2DCF3">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 64px 40px; display: flex; justify-content: space-between; gap: 32px; flex-wrap: wrap">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <img src="images/logo.png" alt="MKY Entertainment" style="height: 64px; width: auto; display: block">
+        <span style="font-size: 13px">[회사 주소] · [대표 연락처]</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-end">
+        <nav aria-label="하단 메뉴" style="display: flex; gap: 24px; font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; flex-wrap: wrap">
+          <a href="#about" style="color: #3B2E6B">ABOUT</a>
+          <a href="#artists" style="color: #3B2E6B">ARTISTS</a>
+          <a href="#news" style="color: #3B2E6B">NEWS</a>
+          <a href="#audition" style="color: #3B2E6B">AUDITION</a>
+        </nav>
+        <span style="font-family: Inter, sans-serif; font-size: 12px; color: #4A4458">© 2026 MKY ENTERTAINMENT. ALL RIGHTS RESERVED.</span>
+        <span style="font-size: 12px; color: #4A4458">이 사이트는 창작 컨셉으로 만든 가상의 기획사 페이지입니다.</span>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+document.querySelectorAll('.news-tab').forEach(function(b){b.addEventListener('click',function(){
+  var c=b.dataset.cat;
+  document.querySelectorAll('.news-tab').forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false');});
+  document.querySelectorAll('.news-item').forEach(function(n){n.hidden=!(c==='ALL'||n.dataset.cat===c);});
+});});
+</script>
+</body>
+</html>
